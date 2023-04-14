@@ -1,0 +1,12 @@
+.user-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.encrypter-input {
+    display: inline;
+}
+
+.encrypter-output {
+    display: none;
+}
