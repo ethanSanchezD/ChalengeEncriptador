@@ -12,22 +12,29 @@
 
 <body>
     <header>
+        <img class="logo" src="images/Logo.png" alt="Logo images">
 
     </header>
 
     <main class="flex-main">
-        <section class="flex-container-one">
-            <textarea cols="70" rows="10" id="output" class="encrypter-output" placeholder="Output text"
+        <section id="output-section" class="flex-container-output">
+            <textarea cols="70" rows="10" id="output" class="encode-output" placeholder="Output text"
                 required></textarea>
-            <img class="image-output" id="image" src="images/Muñeco.png">
+            <img class="image-output" id="image" src="images/Muñeco.png" alt="Not found image doll">
+            <div id="no-text-message">
+                <p class="message-not-found">No message was found</p>
+                <p class="type-text-encode">Type the text you want to decode o encode</p>
+            </div>
+
         </section>
 
-        <section class="flex-container-two">
-            <textarea cols="70" rows="10" class="encrypter-input" placeholder="Enter the text here" required></textarea>
+        <section class="flex-container-input">
+            <textarea cols="70" rows="10" id="encode-message" class="encode-input" placeholder="Enter the text here"
+                required></textarea>
 
             <div class="flex-buttons">
-                <button type="button" onclick="encrypt()" id="encrypt" class="button-encrypt">Encrypt</button>
-                <button type="button" class="button-decrypt">Decrypt</button>
+                <button type="button" onclick="encode()" id="encode" class="button-encode">Encode</button>
+                <button type="button" class="button-decode">Decode</button>
 
             </div>
 
@@ -40,7 +47,7 @@
         <p>Web page done by: Ethan Damian Sanchez Salmeron</p>
     </footer>
 
-    <script src="encriptador.js"></script>
+    <script src="encoder.js"></script>
 </body>
 
 </html>

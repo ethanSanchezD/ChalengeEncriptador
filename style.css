@@ -1,47 +1,100 @@
+body {
+    height: 100vh;
+
+}
+
+header {
+    height: 5%;
+
+}
+
+.logo {
+    height: 85%;
+    margin: 2.5px 0;
+}
+
 .flex-main {
     display: flex;
     flex-direction: row-reverse;
+    height: 90%;
 }
 
-.flex-container-one {
+.flex-container-output {
     display: flex;
     flex-direction: column;
-    background: #6d6c6c;
+    background: #63b98a;
     width: 30%;
+    justify-content: center;
+    padding: 1rem;
+    align-items: center;
 }
 
 .image-output {
-    width: 336px;
-    height: 304px;
-    left: 1032px;
-    top: 283px;
+    margin-bottom: 1em;
+    width: 80%;
+
 }
 
-.flex-container-two {
+.message-not-found {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+    padding: 0.5rem;
+}
+
+.type-text-encode {
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #495057;
+    padding: 0.5rem;
+}
+
+.flex-container-input {
     display: flex;
     flex-direction: column;
     background: #6d6c6c;
-    width: 80%;
+    width: 70%;
 }
 
-.encrypter-input {
+.encode-input {
     display: inline;
-    width: 100%;
+    width: 90%;
+    height: 100%;
+    margin: 1rem 2rem 0 2.5rem;
+
 }
 
-.encrypter-output {
+.encode-input::placeholder {
+    font-family: 'Inter';
+    color: #5c7da7;
+    font-size: 16px;
+}
+
+.encode-output {
     display: none;
-    width: 100%;
+    width: 90%;
+    height: 100%;
+    margin: 0 0.5rem 0 0.5rem;
+
 }
 
 .flex-buttons {
     display: flex;
     justify-content: center;
-    padding: 24px;
     gap: 8px;
+    height: 25%;
+    align-items: center;
 }
 
-.button-encrypt {
+.button-encode {
     font-family: 'Inter';
     width: 300px;
     height: 50px;
@@ -56,7 +109,7 @@
     cursor: pointer;
 }
 
-.button-decrypt {
+.button-decode {
     font-family: 'Inter';
     width: 300px;
     height: 50px;
@@ -69,4 +122,10 @@
     color: #0A3871;
     font-weight: 400;
     cursor: pointer;
+}
+
+footer {
+    /* height: 5%; */
+    text-align: center;
+    padding: 0.56rem;
 }
