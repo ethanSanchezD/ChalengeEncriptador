@@ -15,17 +15,18 @@
 
     </header>
 
-    <main>
-        <section>
+    <main class="flex-main">
+        <section class="flex-container-one">
             <textarea cols="70" rows="10" id="output" class="encrypter-output" placeholder="Output text"
                 required></textarea>
+            <img class="image-output" id="image" src="images/Muñeco.png">
         </section>
 
-        <section class="user-inputs">
+        <section class="flex-container-two">
             <textarea cols="70" rows="10" class="encrypter-input" placeholder="Enter the text here" required></textarea>
 
-            <div>
-                <button type="button" onclick="encrypt()" class="button-encrypt">Encrypt</button>
+            <div class="flex-buttons">
+                <button type="button" onclick="encrypt()" id="encrypt" class="button-encrypt">Encrypt</button>
                 <button type="button" class="button-decrypt">Decrypt</button>
 
             </div>
