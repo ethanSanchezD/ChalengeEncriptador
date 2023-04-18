@@ -17,26 +17,42 @@
     </header>
 
     <main class="flex-main">
-        <section id="output-section" class="flex-container-output">
-            <textarea cols="70" rows="10" id="output" class="encode-output" placeholder="Output text"
-                required></textarea>
-            <img class="image-output" id="image" src="images/Muñeco.png" alt="Not found image doll">
-            <div id="no-text-message">
-                <p class="message-not-found">No message was found</p>
-                <p class="type-text-encode">Type the text you want to decode o encode</p>
-            </div>
-
-        </section>
 
         <section class="flex-container-input">
             <textarea cols="70" rows="10" id="encode-message" class="encode-input" placeholder="Enter the text here"
                 required></textarea>
 
-            <div class="flex-buttons">
-                <button type="button" onclick="encode()" id="encode" class="button-encode">Encode</button>
-                <button type="button" class="button-decode">Decode</button>
+            <div class="warning-message">
+                <img class="warning" src="images/Vector.png">
+                <p>Only lowercase letters and no accents</p>
 
             </div>
+
+
+            <div class="flex-buttons">
+                <button type="button" onclick="encodeClick()" id="encode" class="button-encode">Encode</button>
+                <button type="button" onclick="decode()" class="button-decode">Decode</button>
+
+            </div>
+        </section>
+
+        <section id="output-section" class="flex-container-output">
+            <textarea cols="70" rows="10" id="output-message" class="encode-output" placeholder="Output text"
+                required></textarea>
+            <div class="copy-div" id="div-of-copy">
+                <button type="button" onclick="copy()" id="copy" class="copy-button">Copy</button>
+
+            </div>
+
+            <div class="image-text-not-found">
+                <img class="image-output" id="image" src="images/Muñeco.png" alt="Not found image doll">
+                <div id="no-text-message">
+                    <p class="message-not-found">No message was found</p>
+                    <p class="type-text-encode">Type the text you want to decode o encode</p>
+                </div>
+
+            </div>
+
 
         </section>
 
