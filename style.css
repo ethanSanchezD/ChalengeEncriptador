@@ -92,6 +92,8 @@ header {
     border-radius: 12px;
     outline-color: #88a9d1;
     padding: 1rem 0 0 1rem;
+    color: #9065e1;
+    font-family: 'Chivo Mono', monospace;
 
 
 }
@@ -112,7 +114,8 @@ header {
     outline-color: #558fd6;
     border-radius: 12px;
     padding: 1rem 0 0 1rem;
-
+    color: #5172df;
+    font-family: 'Chivo Mono', monospace;
 }
 
 .copy-div {
@@ -142,7 +145,25 @@ header {
     color: #200a71;
     font-weight: 400;
     cursor: pointer;
-    margin-top: 3rem;
+    margin-top: 2.5rem;
+}
+
+.copied-message {
+    position: absolute;
+    top: 572px;
+    margin-left: 18px;
+    border-radius: 7px;
+    border: 1px solid #7e63e3;
+    padding: 0.5rem;
+    background-color: #dac9fd;
+}
+
+.copied-message p {
+    font-family: 'Inter';
+    color: #463f54;
+    font-size: 13px;
+
+
 }
 
 .image-text-not-found {
