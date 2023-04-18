@@ -1,5 +1,5 @@
 
-function encodeClick() {
+function showOutputdiplays() {
     let outputMessage = document.getElementById("output-message");
     const noTextMessage = document.getElementById("no-text-message");
     const image = document.getElementById("image");
@@ -30,7 +30,6 @@ function encodeClick() {
         noTextMessage.style.display = 'none';
 
     }
-    encode();
 }
 
 function encode() {
@@ -38,11 +37,14 @@ function encode() {
     const messageInput = document.getElementById("encode-message");
 
     outputMessage.value = messageInput.value.replaceAll("e", "enter").replaceAll("i", "imes").replaceAll("a", "ai").replaceAll("o", "ober").replaceAll("u", "ufat");
-
-
-
-
 }
+
+function encodeClick() {
+    showOutputdiplays();
+    encode();
+}
+
+
 
 function decode() {
     let outputMessage = document.getElementById("output-message");
@@ -51,12 +53,33 @@ function decode() {
     outputMessage.value = messageInput.value.replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ai", "a").replaceAll("ober", "o").replaceAll("ufat", "u");
 }
 
+function decodeClick() {
+    showOutputdiplays();
+    decode();
+}
+
 function copy() {
+    console.log()
     let outputMessage = document.getElementById("output-message");
+    let section = document.getElementById('output-section');
+    const message = document.createElement('div');
+    const p = document.createElement('p');
+    p.textContent = 'message copied in your clipboard';
+    message.appendChild(p);
+
+    console.log(message);
+    message.classList.add('copied-message');
+    section.appendChild(message);
+
+
+    setTimeout(function () {
+        console.log(message);
+        message.style.display = 'none';
+
+    }, 2000)
+
 
     outputMessage.select();
     document.execCommand("copy");
-
-
 }
 
