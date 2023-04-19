@@ -146,8 +146,8 @@ header {
 
 .copied-message {
     position: absolute;
-    top: 572px;
-    margin-left: 18px;
+    top: 473px;
+    margin-left: 4px;
     border-radius: 7px;
     border: 1px solid #7e63e3;
     padding: 0.5rem;
@@ -295,8 +295,113 @@ footer p {
         margin: 0%;
         font-size: 12px;
     }
+}
+
+@media screen and (max-width:320px) {
+    body {
+        height: 100vh;
+        width: 124%;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .flex-main {
+        height: 115%;
+        width: 100%;
+    }
 
 
+    .flex-container-input {
+        width: 96%;
+        height: 60%;
+    }
 
+    .encode-input {
+        margin: 1rem 1.5rem 0 2.5rem;
+
+    }
+
+    .flex-buttons {
+        width: 340px;
+        padding-left: 22px;
+    }
+
+    .message-not-found {
+        margin-top: 48px;
+    }
+
+    .copy-button {
+        width: 342px;
+    }
+
+    .copied-message {
+        top: 169px;
+        right: 31px;
+        width: 176px;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:375px) {
+    body {
+        height: 85vh;
+        width: 105%;
+    }
+
+    header {
+        height: 4%;
+        width: 100%;
+
+    }
+
+    .flex-main {
+        height: 115%;
+        width: 100%;
+    }
+
+
+    .flex-container-input {
+        width: 96%;
+        height: 60%;
+    }
+
+    .flex-container-output {
+        padding: 10px;
+    }
+
+    .encode-input {
+        margin: 1rem 1.5rem 0 2.5rem;
+
+    }
+
+    .flex-buttons {
+        width: 91%;
+        padding-left: 22px;
+    }
+
+    .message-not-found {
+        margin-top: 48px;
+    }
+
+    .copy-button {
+        width: 326px;
+    }
+
+    .copied-message {
+        top: 129px;
+        right: 76px;
+        width: 176px;
+    }
+
+    footer {
+        height: 4%;
+        width: 100%;
+    }
 
 }
