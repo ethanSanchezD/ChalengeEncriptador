@@ -9,7 +9,6 @@ function showOutputdiplays() {
 
     outputMessage.style.display = 'none';
     noTextMessage.style.display = 'none';
-    image.style.display = 'none';
     outputMessage = document.getElementById("output-message");
     copyButton = document.getElementById("copy");
 
@@ -67,7 +66,7 @@ function copy() {
     p.textContent = 'message copied in your clipboard';
     message.appendChild(p);
 
-    console.log(message);
+    // console.log(message);
     message.classList.add('copied-message');
     section.appendChild(message);
 
