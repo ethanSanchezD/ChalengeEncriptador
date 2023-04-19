@@ -35,6 +35,7 @@ header {
 .image-output {
     margin-bottom: 1em;
     width: 80%;
+    display: block;
 
 }
 
@@ -105,7 +106,6 @@ header {
 }
 
 .encode-output {
-    resize: none;
     display: none;
     width: 90%;
     height: 90%;
@@ -119,15 +119,11 @@ header {
 }
 
 .copy-div {
-    display: none;
+
     justify-content: center;
     gap: 8px;
     height: 25%;
     align-items: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
 
@@ -220,4 +216,87 @@ footer {
 footer p {
     color: #2d4358;
     font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .image-output {
+        display: none;
+        visibility: hidden;
+        width: 0%;
+        height: 0%;
+        margin: 0%;
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    header {
+        height: 5%;
+    }
+
+    .flex-main {
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .flex-container-input {
+        width: 100%;
+        height: 60%;
+    }
+
+    .button-encode {
+        width: 260px;
+        height: 40px;
+        font-size: 15px;
+
+    }
+
+    .button-decode {
+        width: 260px;
+        height: 40px;
+        font-size: 15px;
+
+    }
+
+    .flex-container-output {
+        width: 95%;
+        height: 30%;
+        padding-top: 17px;
+
+    }
+
+    .encode-output {
+        width: 92%;
+        height: 90%;
+        padding: 0.5rem;
+    }
+
+    .copy-button {
+        width: 674px;
+        height: 40px;
+    }
+
+    .message-not-found {
+        margin-top: 25px;
+    }
+
+    .copied-message {
+        top: 122px;
+        right: 76px;
+
+    }
+
+    footer {
+
+        padding-top: 5px;
+        padding: 0%;
+        height: 5%;
+        margin: 0%;
+        font-size: 12px;
+    }
+
+
+
+
 }
