@@ -66,7 +66,6 @@ function copy() {
     p.textContent = 'message copied in your clipboard';
     message.appendChild(p);
 
-    // console.log(message);
     message.classList.add('copied-message');
     section.appendChild(message);
 
