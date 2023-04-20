@@ -4,31 +4,60 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encripter</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@1&display=swap" rel="stylesheet">
+
 
 </head>
 
 <body>
     <header>
+        <img class="logo" src="images/Logo.png" alt="Logo images">
 
     </header>
 
-    <main>
-        <section>
-            <textarea cols="70" rows="10" id="output" class="encrypter-output" placeholder="Output text"
+    <main class="flex-main">
+
+        <section class="flex-container-input">
+            <textarea cols="70" rows="10" id="encode-message" class="encode-input" placeholder="Enter the text here"
                 required></textarea>
-        </section>
 
-        <section class="user-inputs">
-            <textarea cols="70" rows="10" class="encrypter-input" placeholder="Enter the text here" required></textarea>
-
-            <div>
-                <button type="button" onclick="encrypt()" class="button-encrypt">Encrypt</button>
-                <button type="button" class="button-decrypt">Decrypt</button>
+            <div class="warning-message">
+                <img class="warning" src="images/Vector.png">
+                <p>Only lowercase letters and no accents</p>
 
             </div>
+
+
+            <div class="flex-buttons">
+                <button onclick="encodeClick()" id="encode" class="button-encode" role="button">Encode</button>
+                <button type="button" onclick="decodeClick()" class="button-decode">Decode</button>
+
+            </div>
+        </section>
+
+        <section id="output-section" class="flex-container-output">
+            <textarea cols="70" rows="10" id="output-message" class="encode-output" placeholder="Output text"
+                required></textarea>
+            <div class="copy-div" id="div-of-copy">
+                <button type="button" onclick="copy()" id="copy" class="copy-button">Copy</button>
+
+            </div>
+
+            <div class="image-text-not-found">
+                <img class="image-output" id="image" src="images/Muñeco.png" alt="Not found image doll">
+                <div id="no-text-message">
+                    <p class="message-not-found">No message was found</p>
+                    <p class="type-text-encode">Type the text you want to decode o encode</p>
+                </div>
+
+            </div>
+
 
         </section>
 
@@ -39,7 +68,7 @@
         <p>Web page done by: Ethan Damian Sanchez Salmeron</p>
     </footer>
 
-    <script src="encriptador.js"></script>
+    <script src="encoder.js"></script>
 </body>
 
 </html>
