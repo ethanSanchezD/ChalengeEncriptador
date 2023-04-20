@@ -4,8 +4,8 @@ body {
 }
 
 header {
-    height: 5%;
-    background: #E5E5E5;
+    height: 5.1%;
+    background: #4a4545;
 
 }
 
@@ -18,14 +18,14 @@ header {
     display: flex;
     flex-direction: row;
     height: 90%;
-    background: #E5E5E5;
+    background: #4a4545;
 }
 
 .flex-container-output {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #EEEEEE;
+    background: #7e5fd1;
     width: 30%;
     padding: 1rem;
     align-items: center;
@@ -34,6 +34,7 @@ header {
 
 .image-output {
     margin-bottom: 1em;
+    margin-left: 38px;
     width: 80%;
     display: block;
 
@@ -46,7 +47,7 @@ header {
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
-    color: #343A40;
+    color: #EEEEEE;
     padding: 0.5rem;
 }
 
@@ -57,7 +58,7 @@ header {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #495057;
+    color: #c9c3c3;
     padding: 0.5rem;
 }
 
@@ -65,13 +66,13 @@ header {
     display: flex;
     flex-direction: column;
     /* background: #6d6c6c; */
-    width: 70%;
+    width: 66%;
     align-items: center;
 }
 
 .warning-message {
     display: flex;
-    color: #495057;
+    color: #E5E5E5;
     font-size: 14px;
     width: 90%;
     align-items: center;
@@ -93,7 +94,7 @@ header {
     border-radius: 12px;
     outline-color: #88a9d1;
     padding: 1rem 0 0 1rem;
-    color: #9065e1;
+    color: #474166;
     font-family: 'Chivo Mono', monospace;
 
 
@@ -101,7 +102,7 @@ header {
 
 .encode-input::placeholder {
     font-family: 'Inter';
-    color: #5c7da7;
+    color: #6d668f;
     font-size: 16px;
 }
 
@@ -114,7 +115,7 @@ header {
     outline-color: #558fd6;
     border-radius: 12px;
     padding: 1rem 0 0 1rem;
-    color: #5172df;
+    color: #3236b7;
     font-family: 'Chivo Mono', monospace;
 }
 
@@ -129,20 +130,36 @@ header {
 
 .copy-button {
     display: none;
-    font-family: 'Inter';
-    width: 300px;
-    height: 50px;
-    background: #d0cddd;
-    border-radius: 24px;
-    border: 1px solid #200a71;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #200a71;
-    font-weight: 400;
-    cursor: pointer;
+    background-color: #474166;
+    color: #ede8ff;
     margin-top: 2.5rem;
+    border: 2px solid #381ebd;
+    border-radius: 30px;
+    box-shadow: #381ebd 4px 4px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 260px;
+    height: 50px;
 }
+
+.copy-button:hover {
+    background-color: #4f4581;
+    transform: scale(1.02);
+}
+
+.copy-button:active {
+    box-shadow: #381ebd 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
 
 .copied-message {
     position: absolute;
@@ -175,46 +192,83 @@ header {
     align-items: center;
 }
 
+
 .button-encode {
-    font-family: 'Inter';
-    width: 300px;
-    height: 50px;
-    background: #0A3871;
-    border-radius: 24px;
-    border: 1px solid #0A3871;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+    background-color: #7f7bb9;
+    border: 2px solid #3236b7;
+    border-radius: 30px;
+    box-shadow: #3236b7 4px 4px 0 0;
     color: #FFFFFF;
-    font-weight: 400;
     cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 260px;
+    height: 50px;
+}
+
+.button-encode:hover {
+    background-color: rgb(111, 96, 196);
+    transform: scale(1.02);
+}
+
+.button-encode:active {
+    box-shadow: #3236b7 2px 2px 0 0;
+    transform: translate(2px, 2px);
 }
 
 .button-decode {
-    font-family: 'Inter';
     width: 300px;
     height: 50px;
-    background: #D8DFE8;
-    border-radius: 24px;
-    border: 1px solid #0A3871;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+    background-color: #b4cdf0;
     color: #0A3871;
-    font-weight: 400;
+    border: 2px solid #0A3871;
+    border-radius: 30px;
+    box-shadow: #0A3871 4px 4px 0 0;
     cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 260px;
+    height: 50px;
+}
+
+
+
+.button-decode:hover {
+    background-color: #a5c9fc;
+    transform: scale(1.02);
+}
+
+.button-decode:active {
+    box-shadow: #0A3871 2px 2px 0 0;
+    transform: translate(2px, 2px);
 }
 
 footer {
-    height: 5%;
+    height: 5.2%;
     text-align: center;
     padding: 0.56rem;
-    background: #E5E5E5;
+    background: #4a4545;
 
 }
 
 footer p {
-    color: #2d4358;
+    color: #E5E5E5;
     font-weight: bold;
 }
 
@@ -273,8 +327,10 @@ footer p {
     }
 
     .copy-button {
-        width: 674px;
-        height: 40px;
+        width: 560px;
+        height: 36px;
+        margin-top: 1rem;
+        padding-top: 5px;
     }
 
     .message-not-found {
