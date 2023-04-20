@@ -465,7 +465,7 @@ footer p {
     }
 
     .copied-message {
-        top: 129px;
+        top: 184px;
         right: 76px;
         width: 176px;
     }
@@ -474,12 +474,12 @@ footer p {
         height: 4%;
         width: 100%;
     }
-
 }
+
 
 @media screen and (max-width:414px) {
     .copied-message {
-        top: 196px;
+        top: 183px;
     }
 }
 
@@ -503,11 +503,4 @@ footer p {
         width: 330px;
     }
 
-}
-
-
-@media screen and (max-width:1180px) and (max-height:820px) {
-    .copied-message {
-        top: 586px;
-    }
 }
