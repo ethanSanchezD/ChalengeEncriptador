@@ -127,6 +127,10 @@ header {
     user-select: none;
 }
 
+.encode-output::selection {
+    background-color: transparent;
+}
+
 .copy-div {
 
     justify-content: center;
