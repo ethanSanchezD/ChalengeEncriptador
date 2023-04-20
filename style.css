@@ -1,10 +1,10 @@
 body {
-    height: 97vh;
+    height: 100vh;
 
 }
 
 header {
-    height: 5.1%;
+    height: 5%;
     background: #4a4545;
 
 }
@@ -107,6 +107,7 @@ header {
 }
 
 .encode-output {
+    background-color: #ede8ff;
     display: none;
     width: 90%;
     height: 90%;
@@ -117,6 +118,17 @@ header {
     padding: 1rem 0 0 1rem;
     color: #3236b7;
     font-family: 'Chivo Mono', monospace;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.encode-output::selection {
+    background-color: transparent;
 }
 
 .copy-div {
@@ -260,9 +272,8 @@ header {
 }
 
 footer {
-    height: 5.2%;
+    height: 5%;
     text-align: center;
-    padding: 0.56rem;
     background: #4a4545;
 
 }
@@ -270,6 +281,7 @@ footer {
 footer p {
     color: #E5E5E5;
     font-weight: bold;
+    padding-top: 0.5rem;
 }
 
 @media screen and (max-width:768px) {
@@ -303,6 +315,7 @@ footer p {
         width: 260px;
         height: 40px;
         font-size: 15px;
+        line-height: 40px;
 
     }
 
@@ -310,6 +323,7 @@ footer p {
         width: 260px;
         height: 40px;
         font-size: 15px;
+        line-height: 40px;
 
     }
 
@@ -331,6 +345,7 @@ footer p {
         height: 36px;
         margin-top: 1rem;
         padding-top: 5px;
+        line-height: 28px;
     }
 
     .message-not-found {
@@ -458,6 +473,28 @@ footer p {
     footer {
         height: 4%;
         width: 100%;
+    }
+
+}
+
+@media screen and (max-width:425px) {
+    body {
+        height: 106vh;
+        width: 106%;
+    }
+
+    .flex-buttons {
+        height: 35%;
+        width: 92%;
+    }
+
+    .flex-container-output {
+        width: 92%;
+
+    }
+
+    .copy-button {
+        width: 330px;
     }
 
 }
